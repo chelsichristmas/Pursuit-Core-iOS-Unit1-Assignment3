@@ -8,6 +8,9 @@
 
 import Foundation
 
+print("Welcome to Chelsi's Calculator. Please input your equation. ")
+
+
 func mathStuffFactory(opString: String) -> (Double, Double) -> Double {
   switch opString {
   case "+":
@@ -22,8 +25,39 @@ func mathStuffFactory(opString: String) -> (Double, Double) -> Double {
     return {x, y in x + y }
   }
 }
+
+/* let userInput = readLine()!
 let closureOperation = mathStuffFactory(opString: "+")
+ */
 
-let result = closureOperation(45, 5)
 
-print("result of operation is \(result)")
+
+print("Enter your equation")
+var userInput = readLine() ?? " "
+var userArray : [Character] = []
+
+for char in userInput {
+    userArray.append(char)
+}
+print(userArray)
+/* print("Enter symbol of operation")
+var operatorSymbol = String(readLine()! )
+print("Enter number")
+var secondNumber = Double(readLine()! ) ?? 0
+
+
+if
+switch operatorSymbol {
+case "+" :
+    func addition(firstNumber: Double) ->
+    print("test")
+default:
+    print("")
+}*/
+
+
+
+
+
+
+
